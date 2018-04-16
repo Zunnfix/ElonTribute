@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Elon Musk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+    <style media="screen">
+
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Career</a>
+        <div class="dropdown-content">
+          <a href="http://www.spacex.com/">SpaceX</a>
+          <a href="https://www.tesla.com/">Tesla</a>
+          <a href="https://www.boringcompany.com/">The Boring Company</a>
+          <a href="https://www.neuralink.com/">Neuralink</a></a>
+        </div>
+      </li>
+      <li style="float:right"><a class="active" href="about.html">About</a></li>
+    </ul>
+    <div>
+      <h1>Goals</h1>
+          <p>Musk has envisioned a high-speed transportation system known as the Hyperloop, and has proposed a vertical take-off and landing supersonic jet electric aircraft with electric fan propulsion, known as the Musk electric jet. Musk has stated that the goals of SpaceX, Tesla, and SolarCity revolve around his vision to change the world and humanity. His goals include reducing global warming through sustainable energy production and consumption, and reducing the "risk of human extinction" by establishing a human colony on Mars.</p>
+    </div>
+
+    <h1>My First Google Map</h1>
+    <div id="googleMap" style="width:36%;height:400px;"></div>
+    <script>
+      function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(38.508742,-94.120850),
+          zoom:3.8,
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpvBYQ-2oBsy2coVHV4v72I1NavGxDKgY&callback=myMap">
+    </script>
+
+  </body>
+</html>
